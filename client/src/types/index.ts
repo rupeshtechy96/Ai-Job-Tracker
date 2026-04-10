@@ -40,11 +40,6 @@ export interface RegisterPayload {
   password: string;
 }
 
-export interface ResumeSuggestion {
-  id: string;
-  text: string;
-}
-
 export interface ParsedJobData {
   company: string;
   role: string;
@@ -52,6 +47,9 @@ export interface ParsedJobData {
   niceToHaveSkills: string[];
   seniority: string;
   location: string;
+  salaryRange: string;
+  jdLink: string;
+  notes: string;
   resumeSuggestions: string[];
 }
 

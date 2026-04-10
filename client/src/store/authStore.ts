@@ -24,6 +24,8 @@ export const useAuthStore = create<AuthState>((set) => ({
   clearAuth: () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");
+    sessionStorage.clear();
     set({ token: null, user: null });
+    window.location.href = "/login";
   }
 }));

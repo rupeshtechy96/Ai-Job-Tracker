@@ -51,6 +51,9 @@ export interface ParsedJobData {
   niceToHaveSkills: string[];
   seniority: string;
   location: string;
+  salaryRange: string;
+  jdLink: string;
+  notes: string;
   resumeSuggestions: string[];
 }
 

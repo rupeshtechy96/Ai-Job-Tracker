@@ -97,36 +97,39 @@ export default function AddApplicationModal({
   };
 
   const handleParse = async () => {
-    if (!form.jdText.trim()) {
-      setError("Please paste a job description first.");
-      return;
-    }
+  if (!form.jdText.trim()) {
+    setError("Please paste a job description first.");
+    return;
+  }
 
-    try {
-      setError("");
-      setIsParsing(true);
+  try {
+    setError("");
+    setIsParsing(true);
 
-      const parsed = await onParseJobDescription(form.jdText);
+    const parsed = await onParseJobDescription(form.jdText);
 
-      setForm((prev) => ({
-        ...prev,
-        company: parsed.company || prev.company,
-        role: parsed.role || prev.role,
-        requiredSkills: parsed.requiredSkills ?? [],
-        niceToHaveSkills: parsed.niceToHaveSkills ?? [],
-        seniority: parsed.seniority || "",
-        location: parsed.location || "",
-        resumeSuggestions: parsed.resumeSuggestions ?? [],
-      }));
+    setForm((prev) => ({
+      ...prev,
+      company: parsed.company || prev.company,
+      role: parsed.role || prev.role,
+      requiredSkills: parsed.requiredSkills ?? [],
+      niceToHaveSkills: parsed.niceToHaveSkills ?? [],
+      seniority: parsed.seniority || "",
+      location: parsed.location || "",
+      salaryRange: parsed.salaryRange || "",
+      jdLink: parsed.jdLink || prev.jdLink,
+      notes: parsed.notes || prev.notes,
+      resumeSuggestions: parsed.resumeSuggestions ?? []
+    }));
 
-      setRequiredSkillsText(skillsToString(parsed.requiredSkills ?? []));
-      setNiceToHaveSkillsText(skillsToString(parsed.niceToHaveSkills ?? []));
-    } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to parse job description.");
-    } finally {
-      setIsParsing(false);
-    }
-  };
+    setRequiredSkillsText((parsed.requiredSkills ?? []).join(", "));
+    setNiceToHaveSkillsText((parsed.niceToHaveSkills ?? []).join(", "));
+  } catch (err) {
+    setError(err instanceof Error ? err.message : "Failed to parse job description.");
+  } finally {
+    setIsParsing(false);
+  }
+};
 
   const handleSave = async () => {
     if (!form.company.trim() || !form.role.trim()) {

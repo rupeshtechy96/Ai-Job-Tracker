@@ -10,19 +10,23 @@ export function useAuth() {
 
   const register = async (payload: RegisterPayload) => {
     const response = await authApi.register(payload);
+
     setAuth({
       token: response.data.token,
       user: response.data.user
     });
+
     return response.data;
   };
 
   const login = async (payload: LoginPayload) => {
     const response = await authApi.login(payload);
+
     setAuth({
       token: response.data.token,
       user: response.data.user
     });
+
     return response.data;
   };
 
