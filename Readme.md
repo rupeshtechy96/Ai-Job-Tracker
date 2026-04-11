@@ -1,6 +1,6 @@
 ##🚀 AI Job Tracker
 
-Try the Web application here:
+Website -->
 https://ai-job-tracker-bay.vercel.app/login
 
 **AI Job Tracker** is a full-stack web application that helps users efficiently track and manage their job applications.  
