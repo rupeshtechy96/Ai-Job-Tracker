@@ -20,9 +20,11 @@ It also includes an **AI-powered Job Description Parser** that extracts importan
 
 ## ScreenShots
 
-<img width="850" height="300" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
 
-<img width="850" height="300" alt="image" src="https://github.com/user-attachments/assets/a0aa30cf-4de6-49f5-8485-8de768fc843f" />
+
+
+<img width="900" height="500" alt="image" src="https://github.com/user-attachments/assets/a0aa30cf-4de6-49f5-8485-8de768fc843f" />
 
 
 ---
