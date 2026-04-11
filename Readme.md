@@ -21,9 +21,9 @@ It also includes an **AI-powered Job Description Parser** that extracts importan
 
 ## ScreenShots
 
-<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
+<img width="850" height="480" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
 
-<img width="800" height="745" alt="image" src="https://github.com/user-attachments/assets/aa66a514-ec6d-4171-94ee-7fe0ee77b178" />
+<img width="850" height="480" alt="image" src="https://github.com/user-attachments/assets/aa66a514-ec6d-4171-94ee-7fe0ee77b178" />
 
 ---
 # 🖥️ Tech Stack
@@ -172,6 +172,7 @@ cd server
 npm install
 
 🎯 Future Improvements
+
 AI-based resume optimization
 Interview schedule reminders
 Company-wise job analytics
