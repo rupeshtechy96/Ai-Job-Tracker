@@ -17,7 +17,6 @@ It also includes an **AI-powered Job Description Parser** that extracts importan
 - **Responsive and modern UI**
 - Cloud database with **MongoDB Atlas**
 - Fast frontend powered by **Vite + React**
-- 
 
 ## ScreenShots
 
@@ -46,13 +45,13 @@ It also includes an **AI-powered Job Description Parser** that extracts importan
 - Mongoose
 
 ## Deployment
-Frontend(Vercel) --> https://ai-job-tracker-bay.vercel.app/login 
-Backend(Render)  --> https://ai-job-tracker-1-9r35.onrender.com/
-Database --> MongoDB Atlas  
+- Frontend(Vercel) --> https://ai-job-tracker-bay.vercel.app/login 
+- Backend(Render)  --> https://ai-job-tracker-1-9r35.onrender.com/
+- Database --> MongoDB Atlas  
 
 -------
 # 📂 Project Structure
-
+--
 AI-Job-Tracker
 │
 ├── client # React Frontend (Vite + TypeScript)
@@ -160,27 +159,27 @@ AI-Job-Tracker
 ├── .gitignore
 ├── README.md
 └── package.json (optional)
-
+--
 
 2️⃣ Install Dependencies
+
 ## Frontend
-cd client
-npm install
+- cd client
+- npm install
 
 ## Backend
-cd server
-npm install
+- cd server
+- npm install
 
 🎯 Future Improvements
-
-AI-based resume optimization
-Interview schedule reminders
-Company-wise job analytics
-Chrome extension for quick job saving
+- AI-based resume optimization
+- Interview schedule reminders
+- Company-wise job analytics
+- Chrome extension for quick job saving
 
 👨‍💻 Author
-Rupesh Patel
-GitHub --> https://github.com/rupeshtechy96
-LinkedIn --> https://www.linkedin.com/in/rupeshtechy/
+- Rupesh Patel
+- GitHub --> https://github.com/rupeshtechy96
+- LinkedIn --> https://www.linkedin.com/in/rupeshtechy/
 
 
