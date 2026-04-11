@@ -7,11 +7,6 @@ https://ai-job-tracker-bay.vercel.app/login
 The platform allows users to organize applications across different stages such as **Applied, Phone Screen, Interview, Offer, and Rejected**.
 It also includes an **AI-powered Job Description Parser** that extracts important details like company name, role, skills, location, and salary from job descriptions to help users organize their job search more effectively.
 
-##🌐 Live 
-
-
-Github Repo --> 
-
 ---
 ##✨ Features
 - Track job applications with a **Kanban-style dashboard**
@@ -22,12 +17,13 @@ Github Repo -->
 - **Responsive and modern UI**
 - Cloud database with **MongoDB Atlas**
 - Fast frontend powered by **Vite + React**
+- 
 
 ## ScreenShots
 
-<img width="1101" height="866" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
+<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
 
-<img width="630" height="745" alt="image" src="https://github.com/user-attachments/assets/aa66a514-ec6d-4171-94ee-7fe0ee77b178" />
+<img width="800" height="745" alt="image" src="https://github.com/user-attachments/assets/aa66a514-ec6d-4171-94ee-7fe0ee77b178" />
 
 ---
 # 🖥️ Tech Stack
