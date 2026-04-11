@@ -47,6 +47,7 @@ This project allows users to track applications across different stages like **A
 
 ## 📂 Project Structure
 
+'''
 AI-Job-Tracker
 │
 ├── client                         # React Frontend (Vite + TypeScript)
@@ -160,7 +161,7 @@ AI-Job-Tracker
 ├── .gitignore
 ├── README.md
 └── package.json (optional root)
-
+'''
 
 -----------------------------------
 
