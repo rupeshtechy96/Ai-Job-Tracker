@@ -20,9 +20,10 @@ It also includes an **AI-powered Job Description Parser** that extracts importan
 
 ## ScreenShots
 
-<img width="850" height="480" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
+<img width="850" height="300" alt="image" src="https://github.com/user-attachments/assets/189822dc-35e1-40c1-b5bc-fb559ee32f8e" />
 
-<img width="850" height="480" alt="image" src="https://github.com/user-attachments/assets/aa66a514-ec6d-4171-94ee-7fe0ee77b178" />
+<img width="850" height="300" alt="image" src="https://github.com/user-attachments/assets/a0aa30cf-4de6-49f5-8485-8de768fc843f" />
+
 
 ---
 # 🖥️ Tech Stack
@@ -50,116 +51,119 @@ It also includes an **AI-powered Job Description Parser** that extracts importan
 - Database --> MongoDB Atlas  
 
 -------
-# 📂 Project Structure
---
-AI-Job-Tracker
+## 📁 Project Structure
+
+```
+AI-Job-Tracker/
 │
-├── client # React Frontend (Vite + TypeScript)
+├── client/
+│   │
+│   ├── public/
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── components/
+│   │   │   │
+│   │   │   ├── common/
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Input.tsx
+│   │   │   │   ├── Loader.tsx
+│   │   │   │   ├── Modal.tsx
+│   │   │   │   ├── ProtectedRoute.tsx
+│   │   │   │   └── Textarea.tsx
+│   │   │   │
+│   │   │   ├── dashboard/
+│   │   │   │   ├── AddApplicationModal.tsx
+│   │   │   │   ├── ApplicationDetailModal.tsx
+│   │   │   │   ├── JobCard.tsx
+│   │   │   │   ├── KanbanBoard.tsx
+│   │   │   │   ├── ResumeSuggestions.tsx
+│   │   │   │   └── StatsCards.tsx
+│   │   │   │
+│   │   │   └── layout/
+│   │   │       ├── AppShell.tsx
+│   │   │       └── Navbar.tsx
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── useAuth.ts
+│   │   │   └── useJobs.ts
+│   │   │
+│   │   ├── lib/
+│   │   │   ├── api.ts
+│   │   │   └── utils.ts
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── DashboardPage.tsx
+│   │   │   ├── LoginPage.tsx
+│   │   │   └── RegisterPage.tsx
+│   │   │
+│   │   ├── store/
+│   │   │   └── authStore.ts
+│   │   │
+│   │   ├── types/
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── App.tsx
+│   │   ├── main.tsx
+│   │   ├── index.css
+│   │   └── vite-env.d.ts
+│   │
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
 │
-│ ├── public
-│ │
-│ ├── src
-│ │ ├── components
-│ │ │ ├── common
-│ │ │ │ ├── Button.tsx
-│ │ │ │ ├── Input.tsx
-│ │ │ │ ├── Loader.tsx
-│ │ │ │ ├── Modal.tsx
-│ │ │ │ ├── ProtectedRoute.tsx
-│ │ │ │ └── Textarea.tsx
-│ │ │
-│ │ │ ├── dashboard
-│ │ │ │ ├── AddApplicationModal.tsx
-│ │ │ │ ├── ApplicationDetailModal.tsx
-│ │ │ │ ├── JobCard.tsx
-│ │ │ │ ├── KanbanBoard.tsx
-│ │ │ │ ├── ResumeSuggestions.tsx
-│ │ │ │ └── StatsCards.tsx
-│ │ │
-│ │ │ └── layout
-│ │ │ ├── AppShell.tsx
-│ │ │ └── Navbar.tsx
-│ │
-│ │ ├── hooks
-│ │ │ ├── useAuth.ts
-│ │ │ └── useJobs.ts
-│ │
-│ │ ├── lib
-│ │ │ ├── api.ts
-│ │ │ └── utils.ts
-│ │
-│ │ ├── pages
-│ │ │ ├── DashboardPage.tsx
-│ │ │ ├── LoginPage.tsx
-│ │ │ └── RegisterPage.tsx
-│ │
-│ │ ├── store
-│ │ │ └── authStore.ts
-│ │
-│ │ ├── types
-│ │ │ └── index.ts
-│ │
-│ │ ├── App.tsx
-│ │ ├── main.tsx
-│ │ ├── index.css
-│ │ └── vite-env.d.ts
+├── server/
+│   │
+│   ├── src/
+│   │   │
+│   │   ├── config/
+│   │   │   ├── db.ts
+│   │   │   └── env.ts
+│   │   │
+│   │   ├── controllers/
+│   │   │   ├── authController.ts
+│   │   │   └── jobController.ts
+│   │   │
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.ts
+│   │   │   └── errorMiddleware.ts
+│   │   │
+│   │   ├── models/
+│   │   │   ├── User.ts
+│   │   │   └── Job.ts
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── authRoutes.ts
+│   │   │   └── jobRoutes.ts
+│   │   │
+│   │   ├── services/
+│   │   │   └── aiService.ts
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── helpers.ts
+│   │   │   └── jwt.ts
+│   │   │
+│   │   ├── validators/
+│   │   │   ├── authValidators.ts
+│   │   │   └── jobValidators.ts
+│   │   │
+│   │   ├── app.ts
+│   │   └── index.ts
+│   │
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── .env
 │
-│ ├── package.json
-│ ├── tsconfig.json
-│ ├── vite.config.ts
-│
-│
-├── server # Express Backend (TypeScript)
-│
-│ ├── src
-│ │
-│ │ ├── config
-│ │ │ ├── db.ts
-│ │ │ └── env.ts
-│ │
-│ │ ├── controllers
-│ │ │ ├── authController.ts
-│ │ │ └── jobController.ts
-│ │
-│ │ ├── middleware
-│ │ │ ├── authMiddleware.ts
-│ │ │ └── errorMiddleware.ts
-│ │
-│ │ ├── models
-│ │ │ ├── User.ts
-│ │ │ └── Job.ts
-│ │
-│ │ ├── routes
-│ │ │ ├── authRoutes.ts
-│ │ │ └── jobRoutes.ts
-│ │
-│ │ ├── services
-│ │ │ └── aiService.ts
-│ │
-│ │ ├── utils
-│ │ │ ├── helpers.ts
-│ │ │ └── jwt.ts
-│ │
-│ │ ├── validators
-│ │ │ ├── authValidators.ts
-│ │ │ └── jobValidators.ts
-│ │
-│ │ ├── app.ts
-│ │ └── index.ts
-│
-│ ├── package.json
-│ ├── tsconfig.json
-│ └── .env
-│
-│
-├── screenshots # Optional screenshots for README
-│ ├── dashboard.png
-│ └── login.png
+├── screenshots/
+│   ├── dashboard.png
+│   └── login.png
 │
 ├── .gitignore
 ├── README.md
-└── package.json (optional)
---
+└── package.json
+```
+
+----
 
 2️⃣ Install Dependencies
 
