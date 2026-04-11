@@ -1,6 +1,9 @@
 ##🚀 AI Job Tracker
+
 Try the Web application here:
+
 https://ai-job-tracker-bay.vercel.app/login
+
 **AI Job Tracker** is a full-stack web application that helps users efficiently track and manage their job applications.  
 The platform allows users to organize applications across different stages such as **Applied, Phone Screen, Interview, Offer, and Rejected**.
 It also includes an **AI-powered Job Description Parser** that extracts important details like company name, role, skills, location, and salary from job descriptions to help users organize their job search more effectively.
