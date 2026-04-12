@@ -184,6 +184,7 @@ AI-Job-Tracker/
 - Chrome extension for quick job saving
 
 👨‍💻 Author
+
 - Rupesh Patel
 - GitHub --> https://github.com/rupeshtechy96
 - LinkedIn --> https://www.linkedin.com/in/rupeshtechy/
